@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/produit_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/currency_name"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="currencyName"/>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:id="@+id/value_calculated"
+                android:maxLines="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="150dp"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/value_calculated"
+                android:id="@+id/valueEuro"
+                android:layout_marginLeft="150dp"
+                android:maxLines="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right" />
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/valueEuro"
+                android:layout_marginLeft="150dp"
+                android:id="@+id/valueEutoToThisCurrency"
+                android:maxLines="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
